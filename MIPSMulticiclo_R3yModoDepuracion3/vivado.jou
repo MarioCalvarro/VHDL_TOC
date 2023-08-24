@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Dec  1 18:48:02 2021
+# Process ID: 6556
+# Current directory: C:/hlocal/TOC2021/PR6/MIPSMulticiclo_R3yModoDepuracion
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5956 C:\hlocal\TOC2021\PR6\MIPSMulticiclo_R3yModoDepuracion\MIPSMulticiclo_R3yModoDepuracion.xpr
+# Log file: C:/hlocal/TOC2021/PR6/MIPSMulticiclo_R3yModoDepuracion/vivado.log
+# Journal file: C:/hlocal/TOC2021/PR6/MIPSMulticiclo_R3yModoDepuracion\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/hlocal/TOC2021/PR6/MIPSMulticiclo_R3yModoDepuracion/MIPSMulticiclo_R3yModoDepuracion.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1

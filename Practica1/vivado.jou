@@ -1,0 +1,135 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Oct  3 07:05:05 2022
+# Process ID: 7520
+# Current directory: C:/hlocal/Practica1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8624 C:\hlocal\Practica1\Practica1.xpr
+# Log file: C:/hlocal/Practica1/vivado.log
+# Journal file: C:/hlocal/Practica1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/hlocal/Practica1/Practica1.xpr
+update_compile_order -fileset sources_1
+import_files -norecurse C:/hlocal/divisor.vhd
+update_compile_order -fileset sources_1
+file mkdir C:/hlocal/Practica1/Practica1.srcs/sources_1/new
+close [ open C:/hlocal/Practica1/Practica1.srcs/sources_1/new/contador16.vhd w ]
+add_files C:/hlocal/Practica1/Practica1.srcs/sources_1/new/contador16.vhd
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top contador16 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_registro.tcl
+close_sim
+file mkdir C:/hlocal/Practica1/Practica1.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/hlocal/Practica1/Practica1.srcs/sim_1/new/tb_contador.v w ]
+add_files -fileset sim_1 C:/hlocal/Practica1/Practica1.srcs/sim_1/new/tb_contador.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_contador [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files C:/hlocal/Practica1/Practica1.srcs/sim_1/new/tb_contador.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/hlocal/Practica1/Practica1.srcs/sim_1/new/tb_contador.v
+file delete -force C:/hlocal/Practica1/Practica1.srcs/sim_1/new/tb_contador.v
+update_compile_order -fileset sim_1
+set_property top tb_sumador [get_filesets sim_1]
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/hlocal/Practica1/Practica1.srcs/sim_1/new/tb_contador.vhd w ]
+add_files -fileset sim_1 C:/hlocal/Practica1/Practica1.srcs/sim_1/new/tb_contador.vhd
+update_compile_order -fileset sim_1
+launch_simulation
+source tb_sumador.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_contador [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source tb_contador.tcl
+close_sim
+launch_simulation
+source tb_contador.tcl
+close_sim
+launch_simulation
+source tb_contador.tcl
+close_sim
+launch_simulation
+source tb_contador.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+export_ip_user_files -of_objects  [get_files C:/hlocal/Practica1/Practica1.srcs/constrs_1/imports/1/pins_reg.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/hlocal/Practica1/Practica1.srcs/constrs_1/imports/1/pins_reg.xdc
+file delete -force C:/hlocal/Practica1/Practica1.srcs/constrs_1/imports/1/pins_reg.xdc
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target {localhost:3121/xilinx_tcf/Digilent/210183A6F39FA}
+set_property PROGRAM.FILE {C:/hlocal/Practica1/Practica1.runs/impl_1/contador16.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/hlocal/Practica1/Practica1.runs/impl_1/contador16.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_target {localhost:3121/xilinx_tcf/Digilent/210183A6F39FA}
+open_hw_target {localhost:3121/xilinx_tcf/Digilent/210183A6F39FA}
+set_property PROGRAM.FILE {C:/hlocal/Practica1/Practica1.runs/impl_1/contador16.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/hlocal/Practica1/Practica1.runs/impl_1/contador16.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/hlocal/Practica1/Practica1.runs/impl_1/contador16.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/hlocal/Practica1/Practica1.runs/impl_1/contador16.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+reset_simulation -simset sim_1 -mode behavioral
+close_hw_manager

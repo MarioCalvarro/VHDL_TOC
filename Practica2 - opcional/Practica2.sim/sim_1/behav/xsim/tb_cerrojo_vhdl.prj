@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../srcs/cerrojo.vhd" \
+"../../../../srcs/conv_7seg.vhd" \
+"../../../../srcs/tb_cerrojo.vhd" \
+
+# Do not sort compile order
+nosort

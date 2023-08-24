@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Nov 21 10:39:12 2022
+# Process ID: 2627
+# Current directory: /home/mario/Documentos/Vivado/Practica4Opcional/Practica4Opcional.runs/impl_1
+# Command line: vivado -log ASM_PLACA.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ASM_PLACA.tcl -notrace
+# Log file: /home/mario/Documentos/Vivado/Practica4Opcional/Practica4Opcional.runs/impl_1/ASM_PLACA.vdi
+# Journal file: /home/mario/Documentos/Vivado/Practica4Opcional/Practica4Opcional.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source ASM_PLACA.tcl -notrace

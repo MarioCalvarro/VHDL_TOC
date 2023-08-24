@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Dec  1 12:29:38 2021
+# Process ID: 16148
+# Current directory: C:/hlocal/TOC2021/PR6/MIPSMulticiclo_R3yModoDepuracion/MIPSMulticiclo_R3yModoDepuracion.runs/DCM_100MHz_10MHz_synth_1
+# Command line: vivado.exe -log DCM_100MHz_10MHz.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DCM_100MHz_10MHz.tcl
+# Log file: C:/hlocal/TOC2021/PR6/MIPSMulticiclo_R3yModoDepuracion/MIPSMulticiclo_R3yModoDepuracion.runs/DCM_100MHz_10MHz_synth_1/DCM_100MHz_10MHz.vds
+# Journal file: C:/hlocal/TOC2021/PR6/MIPSMulticiclo_R3yModoDepuracion/MIPSMulticiclo_R3yModoDepuracion.runs/DCM_100MHz_10MHz_synth_1\vivado.jou
+#-----------------------------------------------------------
+source DCM_100MHz_10MHz.tcl -notrace

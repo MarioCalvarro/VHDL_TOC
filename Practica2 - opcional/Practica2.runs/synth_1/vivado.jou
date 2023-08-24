@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Oct 17 10:35:07 2022
+# Process ID: 3000
+# Current directory: C:/hlocal/Practica2 - opcional/Practica2.runs/synth_1
+# Command line: vivado.exe -log cerrojo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cerrojo.tcl
+# Log file: C:/hlocal/Practica2 - opcional/Practica2.runs/synth_1/cerrojo.vds
+# Journal file: C:/hlocal/Practica2 - opcional/Practica2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source cerrojo.tcl -notrace

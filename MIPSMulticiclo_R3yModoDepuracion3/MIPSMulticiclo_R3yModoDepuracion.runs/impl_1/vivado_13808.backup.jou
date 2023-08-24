@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Dec 12 10:27:21 2022
+# Process ID: 13808
+# Current directory: U:/hlocal/MIPSMulticiclo_R3yModoDepuracion3/MIPSMulticiclo_R3yModoDepuracion.runs/impl_1
+# Command line: vivado.exe -log MIPSMulticiclo.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source MIPSMulticiclo.tcl -notrace
+# Log file: U:/hlocal/MIPSMulticiclo_R3yModoDepuracion3/MIPSMulticiclo_R3yModoDepuracion.runs/impl_1/MIPSMulticiclo.vdi
+# Journal file: U:/hlocal/MIPSMulticiclo_R3yModoDepuracion3/MIPSMulticiclo_R3yModoDepuracion.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source MIPSMulticiclo.tcl -notrace
